@@ -1,0 +1,23 @@
+h1{
+    background-color: black;
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form1{
+    background-color: silver;
+    padding:30px;
+    margin-top:10px;
+    margin-left:250px;
+    margin-right:250px;
+    margin-bottom: 10px;
+    
+}
+
+.button{
+    text-align: center;
+    
+}

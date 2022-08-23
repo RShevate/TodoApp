@@ -1,0 +1,25 @@
+.add{
+  
+    position: absolute;
+    right: 70px;
+    /*width: 100px;*/
+}
+.icon-display{
+    font-size: 30px;
+    height: 40px ;
+    width: 40px ;
+    margin-top:10px;
+}
+
+.person{
+  
+    position: absolute;
+    right: 20px;
+    /*width: 100px;*/
+}
+.icon-person{
+    font-size: 30px;
+    height: 40px ;
+    width: 40px ;
+    margin-top:10px;
+}
