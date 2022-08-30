@@ -1,0 +1,24 @@
+<div class="my-container">
+    <h1>{{title}}</h1>
+    <div class="row d-flex align-items-center justify-content-center">
+      <form class="col-md-6">
+        <div class="card px-5 py-5">
+          <div class="form-input" >
+              <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" #phoneNumber class="form-control"
+              placeholder="Enter Phone Number" min="10" max="15">
+          </div>
+          <button class="btn btn-success mt-4 signup" (click)="SignIn(phoneNumber.value);">SignIn</button>
+          <div class="msg">{{msg}}</div>
+        </div>
+      </form>
+      
+
+      <div class="New">
+          <p>New User:</p>
+      </div>
+      <div class="button">
+          <button (click)="SignUp();">SignUp</button>
+      </div>
+    </div>
+</div>
+    

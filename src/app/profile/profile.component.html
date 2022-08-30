@@ -5,12 +5,28 @@
     <mat-toolbar color="primary">
         <mat-toolbar-row>
             <h1>{{title}}</h1>
-
         </mat-toolbar-row>
-
     </mat-toolbar>
 
-        
-    
-
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-2 custyle">
+            <table class="table table-striped custab">
+                <tr>
+                    <th>Name: {{users.name}}</th>
+                    </tr>
+                    <tr>
+                    <th>dob: {{users.dob}}</th>
+                    </tr>
+                    <tr>
+                    <th>Gender: {{users.gender}}</th>
+                    </tr>
+                    <tr>
+                    <th>Contact Number: {{users.contactNumber}}</th>
+                    </tr>
+                    <tr>
+                    <th>Contact Email: {{users.contactEmail}}</th>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>

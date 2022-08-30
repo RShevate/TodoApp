@@ -1,3 +1,9 @@
+.my-container{
+    height: 100%;
+    
+    /* background-color: silver; */
+}
+
 .add{
   
     position: absolute;
@@ -22,4 +28,38 @@
     height: 40px ;
     width: 40px ;
     margin-top:10px;
+}
+.container{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 470px;
+    padding: 30px;
+    
+} 
+/* .PendingButton{
+    padding:20px;
+}*/
+.title{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 130px;
+    /* text-align: center; */
+
+} 
+.container th{
+    padding:2px;
+}
+.Pending{
+    padding: 15px;
+    padding-left: 269px;
+    padding-right: 265px;
+    background-color: slategray;
+    color:white
+}
+.Completed{
+    padding: 15px;
+    padding-left: 269px;
+    padding-right: 266px;
+    background-color: slategray;
+    color:white
 }

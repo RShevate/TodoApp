@@ -1,0 +1,47 @@
+<div class="my-container">
+    <h1>{{tittle}}</h1>
+            <form>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="Name"><span class="req">* </span> Name: </label>
+                        <input required type="text"  [(ngModel)]= "user.name"  name="name" id="name"
+                        class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />
+                    </div><br>
+
+                    <div class="form-group">
+                        <label for="dob"><span class="req">* </span> DOB: </label>
+                        <input class="form-control" type="text" [(ngModel)]= "user.dob" name="dob" id="txt" required
+                            placeholder="Enter dob" /> 
+                        <div id="errFirst"></div>
+                    </div><br>
+
+                    <div class="form-group">
+                        <label for="gender"><span class="req">* </span> Gender : </label>
+                        <input class="form-control" type="text"  [(ngModel)]= "user.gender" name="gender" id="txt"
+                            placeholder="male/female" required  />
+                        <div id="errLast"></div>
+                    </div><br>
+
+                    <div class="form-group">
+                        <label for="contact_number"><span class="req">* </span> Mobile Number: </label>
+                        <input class="form-control" required type="text" [(ngModel)]= "user.contactNumber"  name="contactNumber"
+                            id="contactNumber" placeholder="Enter mobile number" />
+                        
+                    </div><br>
+
+                    <div class="form-group">
+                        <label for="email"><span class="req">* </span> Email: </label>
+                        <input class="form-control" required type="text" [(ngModel)] = "user.contactEmail" name="contactEmail"
+                            id="contactEmail" placeholder="Enter email" />
+                        
+                    </div><br>
+                    <div class="button">
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()" >Register</button>
+                    </div>
+                    </div>
+                </fieldset>
+            </form>          
+</div>
+
+

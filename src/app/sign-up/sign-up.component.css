@@ -1,0 +1,58 @@
+ /* body {
+    padding-top:50px;
+    height:100%;
+}   */
+.my-container{
+    height:100%;
+
+    background-color: silver;
+}  
+fieldset {
+    border: thin solid rgb(248, 244, 244); 
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 60px; 
+    padding-right: 60px;
+    background: #fbfbfb;
+    /* margin-top:80px;  
+    margin-left: 300px; 
+   */
+
+    
+} 
+ form{
+    position:absolute;
+    margin-top: 100px;
+    margin-left: 400px;
+ }
+/* legend {
+   color: #678;
+} */
+ .form-control {
+    /* width: 95%; */
+    padding-right: 130px;
+} 
+/* label small {
+    color: #678 !important;
+} */
+span.req {
+    color:maroon;
+    font-size: 112%;
+} 
+.button{
+    text-align: center;
+}
+
+h1{
+    
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    
+    position: absolute;
+    margin-top: 50px; 
+    text-align: center;
+    margin-left: 570px; 
+
+    
+}

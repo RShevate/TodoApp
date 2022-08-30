@@ -1,33 +1,38 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <button mat-icon-button>
-            <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
-        </button>
-        <h1>{{title}}</h1>
-        <div class="add">
-        <button mat-icon-button>
-            <mat-icon class="icon-display" (click)="createaction();">add</mat-icon>
-        </button></div>
-        <div class="person">
-        <button mat-icon-button>
-            <mat-icon class="icon-person" (click)="action();">person</mat-icon>
-        </button>
+<div class="my-container">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <h1>{{title}}</h1>
+            <div class="add">
+                <button mat-icon-button>
+                    <mat-icon class="icon-display" (click)="createaction();">add</mat-icon>
+                </button></div>
+            <div class="person">
+                <button mat-icon-button>
+                    <mat-icon class="icon-person" (click)="profile();">person</mat-icon>
+                </button>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <div class="PendingButton">
+        <table>
+            <tr>
+            <th><button class="Pending" (click)="pendinglist();" value="Pending">Pending Tasks</button></th>
+            <th><button class="Completed"(click)="completedlist();" value="Completed">Completed Tasks</button></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-2 custyle">
+            <table class="table table-striped custab">
+                <tr *ngFor="let action of actions">
+                    <th><button (click)="actionDetails(action.id);" class="title" value="titles">{{action.actionTitle}}</button></th><br>
+                </tr>
+            </table>
         </div>
-    
-    </mat-toolbar-row>
-</mat-toolbar>
-<mat-sidenav-container>
-    <mat-sidenav #sidenav>
-        <mat-nav-list>
-            <a mat-list-item>Pending Tasks</a>
-            <a mat-list-item>Completed Tasks</a>
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <div style="height: 88vh;"></div>
-        
-    </mat-sidenav-content>
-</mat-sidenav-container>
+    </div>
+</div>
 
 
 

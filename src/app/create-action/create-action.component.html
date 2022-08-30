@@ -1,25 +1,36 @@
 <h1>{{title}}</h1>
-<form >
+<form [formGroup]="formValue">
     <div class="form1">
-      <label for="title" class="form-label">Title:</label>
-      <input type="text" class="form-control" id="title" placeholder="Add title" name="title"><br>
-    
+        <div class="form-group">
+            <label for="actionTitle" class="form-label">Title:</label>
+            <input type="text" required class="form-control" id="actionTitle" placeholder="Add title" formControlName="actionTitle" ><br>
+        </div>
 
-      <label for="description" class="form-label">Description:</label>
-      <input type="text"  class="form-control" id="description" placeholder="Add description" name="description"><br>
-
+        <div class="form-group">
+            <label for="description" class="form-label">Description:</label>
+            <input type="text"  required class="form-control" id="description" placeholder="Add description" formControlName="description"><br>
+        </div>
      
-      <label for="assignedto" class="form-label">Assigned To:</label>
-      <select class="form-control" id="assignedto" placeholder="Assigned to">
+        <div class="form-group">
+            <label for="assignedTo" class="form-label">Assigned To:</label>
+            <select required class="form-control" id="assignedTo" placeholder="Assigned to" formControlName="assignedTo" ngModel >
+                  <option *ngFor="let user of users" [value]="user.userId" >{{user.name}}</option>
+            </select><br>
+        </div>
 
-      </select><br>
+        <div class="form-group">
+            <label for="priority" class="form-label">Priority:</label>
+            <select required class="form-control" id="priority" formControlName="priority" >
+                  <option value="High">High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+           </select><br>
+        </div>
 
-      <label for="priority" class="form-label">Priority:</label>
-      <select class="form-control" id="priority" >
-
-      </select><br>
-      <div class="button">
-    <button type="submit" class="btn btn-primary">Create Action</button>
+        <div class="button">
+            <button type="submit" class="btn btn-primary" (click)="createAction();">Create Action</button>
+        </div>
     </div>
-</div>
-  </form>
+</form>
+
+  

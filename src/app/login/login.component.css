@@ -1,0 +1,84 @@
+.card {
+    border: none;
+    padding: 20px;
+    margin-top: 100px;
+     background-color: silver;
+    /*color: #fff */
+    
+  } 
+  .my-container{
+    height:100%;
+
+    /* background-color: yellow; */
+}   
+  /* .contain{
+  margin: 10rem 0 3rem 0;
+  } */
+  
+  .form-input {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px
+  }
+  
+  .form-control {
+    height: 50px;
+    background-color: #dfe7f3; 
+    text-indent: 24px;
+    font-size: 15px
+  } 
+  
+   /* .form-control:focus {
+     background-color: #25272a;
+    box-shadow: none;
+    color: #fff;
+    border-color: #4f63e7 
+  }  */
+  
+  /* .signup {
+    height: 50px;
+    font-size: 14px
+  } */
+
+   h1{
+    
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    
+    position: absolute; 
+     margin-top: 50px; 
+    margin-left: 600px; 
+    text-align: center; 
+
+
+    
+}
+.New{
+    
+    font-size: 15px;
+    
+    position: relative; 
+     top: 15px;
+     text-align: center;
+     /* margin-right: 550px; */
+     /* left: 650px;     */
+     margin-left: 420px;
+
+}
+.button{
+    
+    font-size: 15px;
+    
+    position: absolute; 
+     margin-top: 345px ;
+     text-align: center;
+     /* margin-right: 410px; */
+     margin-left: 560px;
+
+}  
+.msg{
+  position:absolute;
+margin-top:190px;
+color:red
+}

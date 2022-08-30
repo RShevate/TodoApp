@@ -1,0 +1,28 @@
+<div class="my-container">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <h1>{{title}}</h1> 
+        </mat-toolbar-row>
+    </mat-toolbar>
+    
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-2 custyle">
+            <table class="table table-striped custab">
+                <tr>
+                <th>Action Title: &nbsp; {{actions.actionTitle}}</th>
+                </tr>
+                <tr>
+                <th>Description:  &nbsp;{{actions.description}}</th>
+                </tr>
+                <tr>
+                <th>Created Date: &nbsp; {{actions.createdDateTime}}</th>
+                </tr>
+                <tr>
+                <th>Priority: &nbsp; {{actions.priority}}</th>
+                </tr> 
+            </table>
+        </div>
+            <button class="Decline"  value="Decline" >Decline</button>
+            <button class="Accept"  value="Accept">Accept</button>
+    </div>
+</div>
